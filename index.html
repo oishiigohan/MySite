@@ -4,13 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>photo</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./j/jquery.stalactite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#one").stalactite({
+                duration: 350, //表示速度
+                easing: 'swing', //表示の動き
+                fluid: true //ウィンドウサイズの変更でも適用するか
+            });
+        });
+    </script>
 </head>
 
 <body>
-<div class="photo">
+    <!--<div class="photo">
   <img src="./photo/1.png" data-highres="拡大画像パス1">
   <img src="./photo/ajisai.png" data-highres="拡大画像パス2">
-</div>
+</div>-->
+
+
+    <div id="one">
+        <div class="text"><p style="width:200px;height:200px;">テキスト</p></div>
+        <img src="./photo/1.png" class="a">
+        <!--<iframe width="200" height="100" src="http://www.youtube.com/embed/9Y6H-YjsE9Q" frameborder="0" allowfullscreen></iframe>-->
+        <img src="./photo/ajisai.png" alt="" class="a">
+        <img src="./photo/beranda.png" alt="" class="a">
+    </div>
+
 </body>
 
 </html>
