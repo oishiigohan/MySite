@@ -1,14 +1,49 @@
-.a {
-    height: 200px;
+html,body{
+    height: 100%;
+    width: 1200px;
     margin: 0;
 }
 
+#main{
+    margin: 0 auto;
+    height: 100%;
+}
+
+#top{
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 2px;
+}
+
+.a {
+    height: 200px;
+    margin: 0;
+    float: left;
+    border: 1px #000 solid;
+}
+
 p {
-    background: #fda4a4;
+    background: #fff;
     margin: 0;
 }
 
 .text {
+    float: left;
+    padding-right: 3px;
+    border: 1px #000 solid;
+    text-align: center;
+    display: table-cell;
+	vertical-align: middle;
+}
+
+#one {
+    width:800px;
+    margin: 0 auto;
     float: left;
 }
     
