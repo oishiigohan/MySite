@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <title>photo</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="./jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="./j/jquery.stalactite.min.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jquery.MyThumbnail.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $("#one").stalactite({
-                duration: 350, //表示速度
-                easing: 'swing', //表示の動き
-                fluid: true //ウィンドウサイズの変更でも適用するか
+        $(document).ready(function () {
+            $(".color img").MyThumbnail({
+                thumbWidth: 150,
+                thumbHeight: 150
             });
         });
     </script>
+
 </head>
 
 
@@ -24,42 +24,32 @@
 
 
 <body>
-  
-    <!--<div class="photo">
-  <img src="./photo/1.png" data-highres="拡大画像パス1">
-  <img src="./photo/ajisai.png" data-highres="拡大画像パス2">
-</div>-->
-   
-   
- <div id="main"> 
-    <div id="top">
-        <h1>photo</h1>
-        <ul>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">instaglam</a></li>
-            <li><a href="https://www.facebook.com/fuukayo" >facebook</a></li>
-        </ul>
-    </div>
 
-   
-   
-   
-    <div id="one" style="width: 800px;">
-        <div class="text">
-        　　　<p style="width:200px;height:200px;">♥</p>
+    <div id="main">
+
+        <div class="red color">
+            <img src="./photo/sakusakura.JPG" alt="">
         </div>
-        <img src="./photo/1.png" class="a">
-        <img src="./photo/ajisai.png" alt="" class="a">
-        <img src="./photo/beranda.png" alt="" class="a">
-        <img src="./photo/daaaa.JPG" alt="" class="a">
-        <img src="./photo/drop.png" alt="" class="a">
-        <div class="text">
-            <p style="width:200px;height:200px;">テキスト</p>
+        <div class="orange color">
+            <img src="./photo/okujo.png" alt="">
         </div>
-        <img src="./photo/ema.png" alt="" class="a">
+        <div class="yellow color">
+            <img src="./photo/drop.png" alt="">
+        </div>
+        <div class="green color">
+        <img src="./photo/kyouto2.png" alt="">
+        </div>
+        <div class="blue color">
+            <img src="./photo/1.png" alt="">
+        </div>
+        <div class="indigo color">
+            <img src="./photo/shibuya.png" alt="">
+        </div>
+        <div class="purple color">
+            <img src="./photo/sunset.png" alt="">
+        </div>
+
     </div>
-    
-</div>
 
 </body>
 
