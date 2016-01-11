@@ -26,6 +26,7 @@ h1 {
 
  img{
      width: 100%;
+     opacity: 0.8;
  }
 
 .color {
@@ -46,12 +47,14 @@ h1 {
 
 .cut {
 	/*position:relative;*/
-	float: left;
+	/*float: left;*/
 	overflow: hidden; /*不要部分ｷﾘﾄﾘ*/
 	/*height: 200px; /*正方形にしたいサイズ*/
 	/*width: 10%; /*正方形にしたいサイズ*/
 	/*display: block; /*SPANなのでブロック要素に*/
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
